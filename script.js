@@ -3,11 +3,11 @@ const yesBtn = document.getElementById('yes-btn');
 const celebration = document.getElementById('celebration');
 const container = document.querySelector('.container');
 
-// Initial position for No button
-let noBtnX = window.innerWidth / 2 + 100;
-let noBtnY = window.innerHeight / 2;
-noBtn.style.left = noBtnX + 'px';
-noBtn.style.top = noBtnY + 'px';
+
+// Ensure No button is right next to Yes on load (no absolute positioning)
+noBtn.style.position = '';
+noBtn.style.left = '';
+noBtn.style.top = '';
 
 function moveNoBtn(e) {
   const mouseX = e.clientX;
